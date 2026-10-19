@@ -1,9 +1,30 @@
 # LoL Match Tracker
 
+
+
+
 **League of Legends 전적 자동 기록 · Google Sheets 공유 · Windows 트레이 앱**
 
 LoL Match Tracker는 로컬 League of Legends 클라이언트의 **LCU WebSocket 이벤트**를 통해 게임 종료를 감지하고, 전적을 **Google Sheets**에 자동 기록하는 개인용 도구입니다. 별도 데이터베이스나 외부 애플리케이션 서버를 설치·운영할 필요가 없습니다.
 
+
+
+
+
+
+
+
+## 📥 다운로드
+
+**최신 버전: v2.2.0 | Windows 10/11 (64-bit)**
+
+[⬇️ Windows 설치 파일 다운로드](https://github.com/NaTaeHwan6160/lol-lcu-sheet-tracker/releases/latest/download/LoL.Match.Tracker.Setup.2.2.0.exe)
+
+[📦 전체 릴리스 및 업데이트 내역](https://github.com/NaTaeHwan6160/lol-lcu-sheet-tracker/releases/latest)
+
+설치 파일을 다운로드한 후 실행하면 됩니다. 별도의 Node.js 또는 Git 설치는 필요하지 않습니다.
+
+> **참고:** 코드 서명이 적용되지 않은 프로그램이므로 Windows SmartScreen 경고가 표시될 수 있습니다.
 > **개발 상태:** v2.2.0 — Electron 실행 및 중복 실행 방지는 개발 환경에서 확인했으나, 실제 게임 종료 이벤트부터 Google Sheets 기록까지의 통합 동작은 추가 검증이 필요합니다.
 
 ## 주요 기능
