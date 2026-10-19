@@ -1,0 +1,53 @@
+{
+  "name": "lol-lcu-sheet-tracker",
+  "version": "2.2.0",
+  "private": false,
+  "description": "LCU match event tracker with Google Sheets and local setup UI",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "node index.js",
+    "desktop": "electron .",
+    "build:win": "electron-builder --win nsis",
+    "check": "node --check index.js && node --check electron-main.js && node --check src/app.js && node --check src/sheets.js && node --check src/settings.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "league-connect": "6.0.0-rc13"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "kr.local.lolmatchtracker",
+    "productName": "LoL Match Tracker",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron-main.js",
+      "index.js",
+      "src/**/*",
+      "public/**/*",
+      "assets/**/*",
+      "package.json",
+      "!**/*.map"
+    ],
+    "extraResources": [],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
